@@ -1,10 +1,10 @@
-board = input()
+b = input()
 
-board = board.replace("XXXX", "AAAA")
-board = board.replace("XX", "BB")
+pan = ['AAAA','BB']
+board = b.replace('XXXX', pan[0])
+board = board.replace('XX', pan[1])
 
 if 'X' in board:
     print(-1)
-    
 else:
     print(board)
